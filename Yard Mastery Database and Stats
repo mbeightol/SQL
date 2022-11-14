@@ -1,0 +1,39 @@
+/**YardMastery
+RGS (60)
+Air8 (50)
+Humic Acid (50)
+Sea Kelp (38)
+DThatch (65)
+GreenEffect (36)
+Micro Greene (26)
+Flagship (60)
+Freedom (49)
+Double Dark (53)
+Stress Blend (60)
+Prodiamine (65)
+Dithiopyr (55)
+Essential G (22)
+Acidic Magic (18)
+Alkaline Magic (18)
+**/
+
+CREATE TABLE YardMastery (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, style TEXT); **This function creates a table with all data that I want to select**
+
+INSERT INTO YardMastery VALUES (1, "RGS", 60, "Liquid"); **All INSERT INTO are inserting data into the table - primary key, product name, price, and graular or liquid**
+INSERT INTO YardMastery VALUES (2, "Air8", 50, "Liquid");
+INSERT INTO YardMastery VALUES (3, "Humic Acid", 50, "Liquid");
+INSERT INTO YardMastery VALUES (4, "Sea Kelp", 38, "Liquid");
+INSERT INTO YardMastery VALUES (5, "DThatch", 65, "Liquid");
+INSERT INTO YardMastery VALUES (6, "GreenEffect", 36, "Liquid");
+INSERT INTO YardMastery VALUES (7, "Micro Greene", 26, "Liquid");
+INSERT INTO YardMastery VALUES (8, "Flagship", 60, "Granular");
+INSERT INTO YardMastery VALUES (9, "Freedom", 49, "Granular");
+INSERT INTO YardMastery VALUES (10, "Double Dark", 53, "Granular");
+INSERT INTO YardMastery VALUES (11, "Stress Blend", 60, "Granular");
+INSERT INTO YardMastery VALUES (12, "Prodiamine", 65, "Granular");
+INSERT INTO YardMastery VALUES (13, "Dithiopyr", 55, "Granular");
+INSERT INTO YardMastery VALUES (14, "Essential G", 22, "Granular");
+INSERT INTO YardMastery VALUES (15, "Acidic Magic", 18, "Granular");
+INSERT INTO YardMastery VALUES (16, "Alkaliner Magic", 18, "Granular");
+
+SELECT style, COUNT(style) FROM YardMastery GROUP BY style; **Queried the data to show a count of granular fertilizer product vs liquid fertilizer products**
